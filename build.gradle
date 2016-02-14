@@ -1,0 +1,31 @@
+apply plugin: 'java'
+apply plugin: 'idea'
+
+sourceCompatibility = 1.5
+version = '1.0'
+
+repositories {
+    mavenCentral()
+    maven {
+        url 'http://maven2.javacv.googlecode.com/git/'
+    }
+}
+
+dependencies {
+    testCompile 'org.testng:testng:6.1.1',
+//            'org.seleniumhq.selenium:selenium-java:2.49.0',
+            'com.googlecode.javacpp:javacpp:0.1',
+            'com.googlecode.javacv:javacv:0.1',
+            'com.github.detro:phantomjsdriver:1.2.0'
+
+}
+
+test {
+    useTestNG()
+    include '**/*Test*.*'
+    testLogging.showStandardStreams = true
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '1.1'
+}
