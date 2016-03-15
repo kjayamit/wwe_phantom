@@ -47,7 +47,7 @@ public class BaseTest extends PageFactory {
     @AfterTest
     public void something(){
 
-        System.out.println("This is fucking something bitch ! " + driver.getCurrentUrl() )  ;
+        System.out.println("This is something ! " + driver.getCurrentUrl() )  ;
 
 
 //        System.out.println("This is fucking something bitch ! " + driver.getCurrentUrl() + " " + file.getAbsolutePath())  ;

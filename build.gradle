@@ -14,9 +14,10 @@ repositories {
 dependencies {
     testCompile 'org.testng:testng:6.1.1',
 //            'org.seleniumhq.selenium:selenium-java:2.49.0',
-            'com.googlecode.javacpp:javacpp:0.1',
-            'com.googlecode.javacv:javacv:0.1',
-            'com.github.detro:phantomjsdriver:1.2.0'
+//            'com.googlecode.javacpp:javacpp:0.1',
+//            'com.googlecode.javacv:javacv:0.1',
+            'com.github.detro:phantomjsdriver:1.2.0',
+            'org.postgresql:postgresql:9.4-1200-jdbc41'
 
 }
 
