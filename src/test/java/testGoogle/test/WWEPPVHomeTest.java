@@ -15,4 +15,11 @@ public class WWEPPVHomeTest extends BaseTest{
 
     }
 
+    @Test(groups = {"smoke"})
+    public void doPlayers() throws Exception {
+
+        wikiPPV().splitPlayers();
+
+    }
+
 }

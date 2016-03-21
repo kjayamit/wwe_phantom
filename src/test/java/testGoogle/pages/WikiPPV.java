@@ -2,10 +2,12 @@ package testGoogle.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.html5.*;
 import org.openqa.selenium.support.ui.SystemClock;
 import testGoogle.framework.WebUi;
 
 import java.sql.*;
+import java.sql.ResultSet;
 import java.util.List;
 
 public class WikiPPV extends WebUi{
@@ -17,8 +19,14 @@ public class WikiPPV extends WebUi{
         Connection conn = DriverManager.getConnection(url);
         Statement st = conn.createStatement();
         int n = 0;
-        PreparedStatement addRow = conn.prepareStatement
+        int o = 0;
+        PreparedStatement addPPV = conn.prepareStatement
                 ("INSERT INTO PPV(id, date, name, venue, main_event) values(?,?,?,?,?)");
+
+        PreparedStatement addVenue = conn.prepareStatement
+                ("INSERT INTO Venue(id, location, latlong, url) values(?,?,?,?)");
+
+        PreparedStatement getVenue = conn.prepareStatement("select id from venue where url=?");
 
         List<WebElement> PPVs = driver.findElements(By.className("wikitable")) ;
 
@@ -29,13 +37,32 @@ public class WikiPPV extends WebUi{
                 System.out.println("2");
 
                 if (row.findElements(By.xpath("td")).size()>4) {
-                    addRow.setInt(1,++n);
-                    addRow.setString(2,row.findElement(By.xpath("td")).getText());
-                    addRow.setString(3,row.findElement(By.xpath("td[2]")).getText());
-                    addRow.setString(4,row.findElement(By.xpath("td[3]")).getText());
-                    addRow.setString(5,row.findElement(By.xpath("td[4]")).getText());
-                    addRow.executeUpdate();
-                    System.out.println(addRow);
+                    getVenue.setString(1,row.findElement(By.xpath("td[3]/a")).getAttribute("href"));
+                    System.out.println(getVenue);
+                    ResultSet rs = getVenue.executeQuery();
+
+
+                    if(!rs.next()){
+                        addVenue.setInt(1,++o);
+                        addVenue.setString(2,row.findElement(By.xpath("td[4]")).getText());
+                        addVenue.setString(3,"summa");
+                        addVenue.setString(4,row.findElement(By.xpath("td[3]/a")).getAttribute("href"));
+                        addVenue.executeUpdate();
+                        System.out.println(addVenue);
+                        addPPV.setString(4, String.valueOf(o));
+                    }
+                    else {
+                        int i = rs.getInt(1);
+                        addPPV.setString(4, String.valueOf(i));
+                    }
+
+                    addPPV.setInt(1,++n);
+                    addPPV.setString(2,row.findElement(By.xpath("td")).getText());
+                    addPPV.setString(3,row.findElement(By.xpath("td[2]")).getText());
+
+                    addPPV.setString(5,row.findElement(By.xpath("td[5]")).getText());
+                    addPPV.executeUpdate();
+                    System.out.println(addPPV);
                 }
 
                 List<WebElement> columns = row.findElements(By.xpath("td"));
@@ -52,6 +79,22 @@ public class WikiPPV extends WebUi{
             }
         }
         conn.close();
+    }
+
+    public void splitPlayers() {
+        driver.get("https://en.wikipedia.org/wiki/No_Mercy_(2000)");
+
+        List<WebElement> rows = driver.findElements(By.xpath("//table[@class='wikitable']/tbody/tr"));
+        String s = new String();
+        for( WebElement row:rows) {
+            if(row.findElements(By.xpath("td")).size() > 0) {
+                s = row.findElement(By.xpath("td")).getText();
+                String[] groups = s.split("defeated|vs\\.");
+                for (String s2 : groups) {
+                    System.out.println( "some" + s2);
+                }
+            }
+        }
     }
 
 
