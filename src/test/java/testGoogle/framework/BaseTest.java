@@ -35,7 +35,7 @@ public class BaseTest extends PageFactory {
 
 
     @AfterTest
-    public void something(){
+    public void somethingMore(){
         System.out.println("This is something ! " + driver.getCurrentUrl() )  ;
     }
 

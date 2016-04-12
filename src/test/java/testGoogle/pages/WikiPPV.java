@@ -82,19 +82,55 @@ public class WikiPPV extends WebUi{
     }
 
     public void splitPlayers() {
-        driver.get("https://en.wikipedia.org/wiki/No_Mercy_(2000)");
+        driver.get("https://en.wikipedia.org/wiki/Survivor_Series_(2000)");
 
         List<WebElement> rows = driver.findElements(By.xpath("//table[@class='wikitable']/tbody/tr"));
         String s = new String();
+        String all = new String();
+        int noOfPlayers;
         for( WebElement row:rows) {
             if(row.findElements(By.xpath("td")).size() > 0) {
                 s = row.findElement(By.xpath("td")).getText();
+                System.out.println( "Match " + s);
                 String[] groups = s.split("defeated|vs\\.");
                 for (String s2 : groups) {
-                    System.out.println( "some" + s2);
+                    System.out.println( "Group/Player " + s2);
+
+                    String[] group2 = s2.split("\\(|\\)");
+
+//                    for (String s3 : group2) {
+//                        System.out.println("some2 " + s3);
+//                    }
+
+                    for (int i=0; i<group2.length; i++){
+//                        System.out.println("some2 " + group2[i]);
+                        if(group2[i].contains("and") && !group2[i].contains("with")) {
+//                            all = "Superstar : " + group2[i - 1];
+                            System.out.println("Superstar : ");
+                            split(group2[i]);
+                        }
+                        else if (group2[i].contains("with")) {
+//                            all = "Superstar : " + group2[i - 1];
+                            System.out.println("Accompanied with : ");
+                            split(group2[i]);
+                        }
+                        else {
+//                            all = "Superstar : " + group2[i - 1];
+                            System.out.println("Superstar : ");
+                            split(group2[i]);
+                        }
+                    }
                 }
             }
         }
+    }
+
+    public String[] split(String s) {
+        String[] players = s.split("and|,");
+        for( String player: players){
+            System.out.println("player : " + player);
+        }
+        return players;
     }
 
 

@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41a60e9d-dc7b-421d-9dc7-61e008d9eb46" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/phantomjsdriver.log" afterPath="$PROJECT_DIR$/phantomjsdriver.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/testGoogle/framework/BaseTest.java" afterPath="$PROJECT_DIR$/src/test/java/testGoogle/framework/BaseTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/testGoogle/pages/WikiPPV.java" afterPath="$PROJECT_DIR$/src/test/java/testGoogle/pages/WikiPPV.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/testGoogle/test/WWEPPVHomeTest.java" afterPath="$PROJECT_DIR$/src/test/java/testGoogle/test/WWEPPVHomeTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test1.txt" afterPath="$PROJECT_DIR$/test1.txt" />
     </list>
     <ignored path="WebdriverTutorial.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -46,31 +47,67 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WWEPPVHomeTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="WWEPPVHomeTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/testGoogle/test/WWEPPVHomeTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
+            <state vertical-scroll-proportion="-0.41232228">
+              <caret line="38" column="48" selection-start-line="38" selection-start-column="48" selection-end-line="38" selection-end-column="48" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NativeMethodAccessorImpl.class" pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_73.jdk/Contents/Home/jre/lib/rt.jar!/sun/reflect/NativeMethodAccessorImpl.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-11.814815">
+              <caret line="37" column="33" selection-start-line="37" selection-start-column="33" selection-end-line="37" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WikiPPV.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SuiteRunnerWorker.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.testng/testng/6.1.1/c762bd3de6bcc529e457fed1433d74c09d9e6afc/testng-6.1.1-sources.jar!/org/testng/SuiteRunnerWorker.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="85" column="0" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
+              <folding>
+                <element signature="e#2833#2834#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BaseTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/testGoogle/framework/BaseTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WikiPPV.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/testGoogle/pages/WikiPPV.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5701754">
-              <caret line="89" column="61" selection-start-line="89" selection-start-column="61" selection-end-line="89" selection-end-column="61" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="96" column="62" selection-start-line="96" selection-start-column="62" selection-end-line="96" selection-end-column="62" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1458302341000" expanded="true" signature="736:804" placeholder="INSERT INTO PPV... " />
-                <marker date="1458302341000" expanded="true" signature="886:947" placeholder="INSERT INTO Venue... " />
-                <marker date="1458302341000" expanded="true" signature="1012:1044" placeholder="select id fr... venue" />
+                <marker date="1458639410000" expanded="true" signature="736:804" placeholder="INSERT INTO PPV... " />
+                <marker date="1458639410000" expanded="true" signature="886:947" placeholder="INSERT INTO Venue... " />
+                <marker date="1458639410000" expanded="true" signature="1012:1044" placeholder="select id fr... venue" />
               </folding>
             </state>
           </provider>
@@ -315,10 +352,10 @@
         <option value="$PROJECT_DIR$/src/test/resources/db.sql" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/test/java/testGoogle/framework/Driver.java" />
-        <option value="$PROJECT_DIR$/src/test/java/testGoogle/framework/BaseTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/testGoogle/framework/PageFactory.java" />
-        <option value="$PROJECT_DIR$/src/test/java/testGoogle/test/WWEPPVHomeTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/testGoogle/pages/WikiPPV.java" />
+        <option value="$PROJECT_DIR$/src/test/java/testGoogle/framework/BaseTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/testGoogle/test/WWEPPVHomeTest.java" />
       </list>
     </option>
   </component>
@@ -335,9 +372,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="72" />
+    <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="748" />
+    <option name="height" value="754" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -364,6 +401,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -548,9 +588,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -564,42 +601,9 @@
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.34367815" />
-    <property name="last_opened_file_path" value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.postgresql/postgresql/9.4-1200-jdbc41/8d660a9abf8016989857499c16e361cee80b14b6/postgresql-9.4-1200-jdbc41.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../NSM/sphinx_automation_api" />
   </component>
-  <component name="RunManager" selected="TestNG.WWEPPVHomeTest.doPlayers (1)">
-    <configuration default="false" name="WWEPPVHomeTest.doGoogleSearch" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="testGoogle.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="WebdriverTutorial" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="testGoogle.test" />
-      <option name="MAIN_CLASS_NAME" value="testGoogle.test.WWEPPVHomeTest" />
-      <option name="METHOD_NAME" value="doGoogleSearch" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="TestNG.WWEPPVHomeTest.something (1)">
     <configuration default="false" name="WWEPPVHomeTest.doGoogleSearch (1)" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -618,39 +622,6 @@
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" value="0" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-      <method />
-    </configuration>
-    <configuration default="false" name="HomePageTest.summa" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="testGoogle.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="WebdriverTutorial" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="testGoogle.test" />
-      <option name="MAIN_CLASS_NAME" value="testGoogle.test.HomePageTest" />
-      <option name="METHOD_NAME" value="summa" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <option name="OUTPUT_DIRECTORY" />
       <option name="ANNOTATION_TYPE" />
@@ -713,6 +684,72 @@
       <option name="PACKAGE_NAME" value="testGoogle.test" />
       <option name="MAIN_CLASS_NAME" value="testGoogle.test.WWEPPVHomeTest" />
       <option name="METHOD_NAME" value="doPlayers" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" value="0" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="false" name="WWEPPVHomeTest.something" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="testGoogle.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="WebdriverTutorial" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="testGoogle.test" />
+      <option name="MAIN_CLASS_NAME" value="testGoogle.test.WWEPPVHomeTest" />
+      <option name="METHOD_NAME" value="something" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="false" name="WWEPPVHomeTest.something (1)" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="testGoogle.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="WebdriverTutorial" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="testGoogle.test" />
+      <option name="MAIN_CLASS_NAME" value="testGoogle.test.WWEPPVHomeTest" />
+      <option name="METHOD_NAME" value="something" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -1220,19 +1257,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="TestNG.WWEPPVHomeTest.doGoogleSearch" />
-      <item index="1" class="java.lang.String" itemvalue="TestNG.WWEPPVHomeTest.doGoogleSearch (1)" />
-      <item index="2" class="java.lang.String" itemvalue="TestNG.HomePageTest.summa" />
-      <item index="3" class="java.lang.String" itemvalue="TestNG.WWEPPVHomeTest.doPlayers" />
-      <item index="4" class="java.lang.String" itemvalue="TestNG.WWEPPVHomeTest.doPlayers (1)" />
+      <item index="0" class="java.lang.String" itemvalue="TestNG.WWEPPVHomeTest.doGoogleSearch (1)" />
+      <item index="1" class="java.lang.String" itemvalue="TestNG.WWEPPVHomeTest.doPlayers" />
+      <item index="2" class="java.lang.String" itemvalue="TestNG.WWEPPVHomeTest.doPlayers (1)" />
+      <item index="3" class="java.lang.String" itemvalue="TestNG.WWEPPVHomeTest.something" />
+      <item index="4" class="java.lang.String" itemvalue="TestNG.WWEPPVHomeTest.something (1)" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="TestNG.WWEPPVHomeTest.doPlayers (1)" />
-        <item index="1" class="java.lang.String" itemvalue="TestNG.WWEPPVHomeTest.doPlayers" />
-        <item index="2" class="java.lang.String" itemvalue="TestNG.WWEPPVHomeTest.doGoogleSearch (1)" />
-        <item index="3" class="java.lang.String" itemvalue="TestNG.WWEPPVHomeTest.doGoogleSearch" />
-        <item index="4" class="java.lang.String" itemvalue="TestNG.HomePageTest.summa" />
+        <item index="0" class="java.lang.String" itemvalue="TestNG.WWEPPVHomeTest.something (1)" />
+        <item index="1" class="java.lang.String" itemvalue="TestNG.WWEPPVHomeTest.something" />
+        <item index="2" class="java.lang.String" itemvalue="TestNG.WWEPPVHomeTest.doPlayers (1)" />
+        <item index="3" class="java.lang.String" itemvalue="TestNG.WWEPPVHomeTest.doPlayers" />
+        <item index="4" class="java.lang.String" itemvalue="TestNG.WWEPPVHomeTest.doGoogleSearch (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -1249,57 +1286,58 @@
       <workItem from="1457691450479" duration="1609000" />
       <workItem from="1457933407667" duration="65000" />
       <workItem from="1457934096248" duration="2533000" />
-      <workItem from="1457947593852" duration="20953000" />
+      <workItem from="1457947593852" duration="32839000" />
+      <workItem from="1458725174346" duration="12165000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="WWEPPVHomeTest_doPlayers - 2016.03.18 at 17h 08m 24s.xml">
-      <configuration name="WWEPPVHomeTest.doPlayers" configurationId="TestNG" />
+    <history-entry file="WWEPPVHomeTest_something - 2016.04.05 at 16h 01m 59s.xml">
+      <configuration name="WWEPPVHomeTest.something" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="WWEPPVHomeTest_doPlayers - 2016.03.18 at 17h 08m 46s.xml">
-      <configuration name="WWEPPVHomeTest.doPlayers" configurationId="TestNG" />
+    <history-entry file="WWEPPVHomeTest_something_(1) - 2016.04.06 at 12h 36m 38s.xml">
+      <configuration name="WWEPPVHomeTest.something (1)" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="WWEPPVHomeTest_doPlayers - 2016.03.18 at 17h 27m 47s.xml">
-      <configuration name="WWEPPVHomeTest.doPlayers" configurationId="TestNG" />
+    <history-entry file="WWEPPVHomeTest_something_(1) - 2016.04.11 at 12h 28m 08s.xml">
+      <configuration name="WWEPPVHomeTest.something (1)" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="WWEPPVHomeTest_doPlayers_(1) - 2016.03.18 at 17h 07m 32s.xml">
-      <configuration name="WWEPPVHomeTest.doPlayers (1)" configurationId="TestNG" />
+    <history-entry file="WWEPPVHomeTest_something_(1) - 2016.04.11 at 12h 32m 40s.xml">
+      <configuration name="WWEPPVHomeTest.something (1)" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="WWEPPVHomeTest_doPlayers_(1) - 2016.03.18 at 17h 09m 46s.xml">
-      <configuration name="WWEPPVHomeTest.doPlayers (1)" configurationId="TestNG" />
+    <history-entry file="WWEPPVHomeTest_something_(1) - 2016.04.11 at 12h 36m 21s.xml">
+      <configuration name="WWEPPVHomeTest.something (1)" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="WWEPPVHomeTest_doPlayers_(1) - 2016.03.18 at 17h 15m 41s.xml">
-      <configuration name="WWEPPVHomeTest.doPlayers (1)" configurationId="TestNG" />
+    <history-entry file="WWEPPVHomeTest_something_(1) - 2016.04.11 at 12h 41m 55s.xml">
+      <configuration name="WWEPPVHomeTest.something (1)" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="WWEPPVHomeTest_doPlayers_(1) - 2016.03.18 at 17h 23m 55s.xml">
-      <configuration name="WWEPPVHomeTest.doPlayers (1)" configurationId="TestNG" />
+    <history-entry file="WWEPPVHomeTest_something_(1) - 2016.04.11 at 12h 43m 33s.xml">
+      <configuration name="WWEPPVHomeTest.something (1)" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="WWEPPVHomeTest_doPlayers_(1) - 2016.03.18 at 17h 24m 19s.xml">
-      <configuration name="WWEPPVHomeTest.doPlayers (1)" configurationId="TestNG" />
+    <history-entry file="WWEPPVHomeTest_something_(1) - 2016.04.12 at 11h 54m 47s.xml">
+      <configuration name="WWEPPVHomeTest.something (1)" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="WWEPPVHomeTest_doPlayers_(1) - 2016.03.18 at 17h 24m 55s.xml">
-      <configuration name="WWEPPVHomeTest.doPlayers (1)" configurationId="TestNG" />
+    <history-entry file="WWEPPVHomeTest_something_(1) - 2016.04.12 at 11h 57m 11s.xml">
+      <configuration name="WWEPPVHomeTest.something (1)" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="WWEPPVHomeTest_doPlayers_(1) - 2016.03.18 at 17h 29m 15s.xml">
-      <configuration name="WWEPPVHomeTest.doPlayers (1)" configurationId="TestNG" />
+    <history-entry file="WWEPPVHomeTest_something_(1) - 2016.04.12 at 12h 21m 10s.xml">
+      <configuration name="WWEPPVHomeTest.something (1)" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25160000" />
+    <option name="totallyTimeSpent" value="49211000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="72" width="1440" height="748" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="754" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298969" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32846716" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298969" sideWeight="0.50277776" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28718704" sideWeight="0.49722221" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34306568" sideWeight="0.49722221" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1309,7 +1347,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39911634" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2788321" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1334,7 +1372,7 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="8" />
+      <option name="time" value="17" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1343,6 +1381,39 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/test/java/testGoogle/framework/WebUi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/testGoogle/test/WWEPPVHomeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/testGoogle/pages/WikiPPV.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1458639410000" expanded="true" signature="736:804" placeholder="INSERT INTO PPV... " />
+            <marker date="1458639410000" expanded="true" signature="886:947" placeholder="INSERT INTO Venue... " />
+            <marker date="1458639410000" expanded="true" signature="1012:1044" placeholder="select id fr... venue" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1356,7 +1427,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="false" />
+            <element signature="e#1232#1233#0" expanded="false" />
+            <element signature="e#1266#1267#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1365,7 +1437,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="51" selection-start-line="11" selection-start-column="51" selection-end-line="11" selection-end-column="51" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1375,9 +1449,9 @@
           <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1458302341000" expanded="true" signature="736:804" placeholder="INSERT INTO PPV... " />
-            <marker date="1458302341000" expanded="true" signature="886:947" placeholder="INSERT INTO Venue... " />
-            <marker date="1458302341000" expanded="true" signature="1012:1044" placeholder="select id fr... venue" />
+            <marker date="1458639410000" expanded="true" signature="736:804" placeholder="INSERT INTO PPV... " />
+            <marker date="1458639410000" expanded="true" signature="886:947" placeholder="INSERT INTO Venue... " />
+            <marker date="1458639410000" expanded="true" signature="1012:1044" placeholder="select id fr... venue" />
           </folding>
         </state>
       </provider>
@@ -1387,7 +1461,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="false" />
+            <element signature="e#1232#1233#0" expanded="false" />
+            <element signature="e#1266#1267#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1396,7 +1471,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="51" selection-start-line="11" selection-start-column="51" selection-end-line="11" selection-end-column="51" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1421,9 +1498,9 @@
           <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1458302341000" expanded="true" signature="736:804" placeholder="INSERT INTO PPV... " />
-            <marker date="1458302341000" expanded="true" signature="886:947" placeholder="INSERT INTO Venue... " />
-            <marker date="1458302341000" expanded="true" signature="1012:1044" placeholder="select id fr... venue" />
+            <marker date="1458639410000" expanded="true" signature="736:804" placeholder="INSERT INTO PPV... " />
+            <marker date="1458639410000" expanded="true" signature="886:947" placeholder="INSERT INTO Venue... " />
+            <marker date="1458639410000" expanded="true" signature="1012:1044" placeholder="select id fr... venue" />
           </folding>
         </state>
       </provider>
@@ -1432,7 +1509,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="39" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1441,7 +1520,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="false" />
+            <element signature="e#1232#1233#0" expanded="false" />
+            <element signature="e#1266#1267#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1450,7 +1530,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="51" selection-start-line="11" selection-start-column="51" selection-end-line="11" selection-end-column="51" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1472,7 +1554,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.07462686">
           <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="78" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1504,7 +1585,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.868421">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1520,38 +1600,65 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testGoogle/framework/BaseTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.3486842">
-          <caret line="52" column="16" selection-start-line="52" selection-start-column="16" selection-end-line="52" selection-end-column="16" />
           <folding>
-            <element signature="e#1228#1229#0" expanded="false" />
-            <element signature="e#1262#1263#0" expanded="false" />
+            <element signature="imports" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testGoogle/test/WWEPPVHomeTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/testGoogle/pages/WikiPPV.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5701754">
-          <caret line="89" column="61" selection-start-line="89" selection-start-column="61" selection-end-line="89" selection-end-column="61" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="96" column="62" selection-start-line="96" selection-start-column="62" selection-end-line="96" selection-end-column="62" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1458302341000" expanded="true" signature="736:804" placeholder="INSERT INTO PPV... " />
-            <marker date="1458302341000" expanded="true" signature="886:947" placeholder="INSERT INTO Venue... " />
-            <marker date="1458302341000" expanded="true" signature="1012:1044" placeholder="select id fr... venue" />
+            <marker date="1458639410000" expanded="true" signature="736:804" placeholder="INSERT INTO PPV... " />
+            <marker date="1458639410000" expanded="true" signature="886:947" placeholder="INSERT INTO Venue... " />
+            <marker date="1458639410000" expanded="true" signature="1012:1044" placeholder="select id fr... venue" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/testGoogle/framework/BaseTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.testng/testng/6.1.1/c762bd3de6bcc529e457fed1433d74c09d9e6afc/testng-6.1.1-sources.jar!/org/testng/SuiteRunnerWorker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="85" column="0" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
+          <folding>
+            <element signature="e#2833#2834#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_73.jdk/Contents/Home/src.zip!/java/io/FileInputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="92" column="0" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_73.jdk/Contents/Home/jre/lib/rt.jar!/sun/reflect/NativeMethodAccessorImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.814815">
+          <caret line="37" column="33" selection-start-line="37" selection-start-column="33" selection-end-line="37" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/testGoogle/test/WWEPPVHomeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.41232228">
+          <caret line="38" column="48" selection-start-line="38" selection-start-column="48" selection-end-line="38" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
