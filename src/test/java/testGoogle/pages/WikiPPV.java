@@ -6,8 +6,10 @@ import org.openqa.selenium.html5.*;
 import org.openqa.selenium.support.ui.SystemClock;
 import testGoogle.framework.WebUi;
 
+import java.io.IOException;
 import java.sql.*;
 import java.sql.ResultSet;
+import java.util.ArrayList;
 import java.util.List;
 
 public class WikiPPV extends WebUi{
@@ -81,8 +83,22 @@ public class WikiPPV extends WebUi{
         conn.close();
     }
 
-    public void splitPlayers() {
-        driver.get("https://en.wikipedia.org/wiki/Survivor_Series_(2000)");
+    public void splitPlayers() throws IOException,ClassNotFoundException, SQLException   {
+        driver.get("https://en.wikipedia.org/wiki/WrestleMania_32");
+
+//        driver.get("https://en.wikipedia.org/wiki/List_of_WWE_pay-per-view_events");
+
+        Class.forName("org.postgresql.Driver");
+        String url = "jdbc:postgresql://localhost/wwe?user=jaya";
+        Connection conn = DriverManager.getConnection(url);
+
+        Statement st = conn.createStatement();
+        ResultSet rs = st.executeQuery("select name from superstar");
+
+        ArrayList<String> values = new ArrayList<String>();
+        while (rs.next()) {
+            values.add(rs.getString("name"));
+        }
 
         List<WebElement> rows = driver.findElements(By.xpath("//table[@class='wikitable']/tbody/tr"));
         String s = new String();
@@ -91,6 +107,10 @@ public class WikiPPV extends WebUi{
         for( WebElement row:rows) {
             if(row.findElements(By.xpath("td")).size() > 0) {
                 s = row.findElement(By.xpath("td")).getText();
+                for (int i =0; i< values.size(); i++){
+                    if (s.contains(values.get(i).trim()))
+                        s = s.replace(values.get(i).trim(),String.valueOf(i));
+                }
                 System.out.println( "Match " + s);
                 String[] groups = s.split("defeated|vs\\.");
                 for (String s2 : groups) {
@@ -123,6 +143,8 @@ public class WikiPPV extends WebUi{
                 }
             }
         }
+
+        conn.close();
     }
 
     public String[] split(String s) {
