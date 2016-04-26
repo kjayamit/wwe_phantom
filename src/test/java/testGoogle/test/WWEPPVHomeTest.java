@@ -44,27 +44,11 @@ public class WWEPPVHomeTest extends BaseTest{
         System.out.println("\n\njsonString: " + jsonString);
 
         try {
-
             JSONObject jsonObject = new JSONObject(jsonString);
             System.out.println("\n\njsonObject: " + jsonObject);
 
-            Iterator<?> keys = jsonObject.keys();
-
-            while( keys.hasNext() ) {
-                String key = (String)keys.next();
-                if ( jsonObject.get(key) instanceof JSONObject ) {
-                    System.out.println("\n\nKey : " + key);
-                }
-            }
-
-            for(int i = 0; i<jsonObject.names().length(); i++){
-                System.out.println( "key = " + jsonObject.names().getString(i) + " value = " + jsonObject.get(jsonObject.names().getString(i)));
-            }
-
             JSONArray jsonArray = jsonObject.getJSONArray("talent");
-
             System.out.println("\n\njsonArray: " + jsonArray);
-
 
                     Class.forName("org.postgresql.Driver");
                 String url = "jdbc:postgresql://localhost/wwe?user=jaya";
@@ -79,9 +63,6 @@ public class WWEPPVHomeTest extends BaseTest{
                 String name = rec.getString("name");
                 String link = rec.getString("link");
                 System.out.println("Superstar " + i + " : " + name + " link : " + link);
-
-
-
                 addSuperstar.setInt(1,i+1);
                 addSuperstar.setString(2,name);
                 addSuperstar.setString(3,link);
@@ -98,11 +79,14 @@ public class WWEPPVHomeTest extends BaseTest{
     }
 
     @Test(groups = {"smoke"})
-    public void nothing()  throws IOException,ClassNotFoundException, SQLException  {
+    public void nothing() throws IOException,ClassNotFoundException, SQLException   {
+        wikiPPV().wwePlayers();
+        wikiPPV().wweAlum();
+    }
 
-        Class.forName("org.postgresql.Driver");
-        String url = "jdbc:postgresql://localhost/wwe?user=jaya";
-        Connection conn = DriverManager.getConnection(url);
+    @Test(groups = {"smoke"})
+    public void ringnames() throws IOException,ClassNotFoundException, SQLException   {
+        wikiPPV().playerName();
     }
 
 

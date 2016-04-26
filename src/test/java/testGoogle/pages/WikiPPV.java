@@ -1,5 +1,8 @@
 package testGoogle.pages;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.html5.*;
@@ -10,6 +13,7 @@ import java.io.IOException;
 import java.sql.*;
 import java.sql.ResultSet;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class WikiPPV extends WebUi{
@@ -118,24 +122,16 @@ public class WikiPPV extends WebUi{
 
                     String[] group2 = s2.split("\\(|\\)");
 
-//                    for (String s3 : group2) {
-//                        System.out.println("some2 " + s3);
-//                    }
-
                     for (int i=0; i<group2.length; i++){
-//                        System.out.println("some2 " + group2[i]);
                         if(group2[i].contains("and") && !group2[i].contains("with")) {
-//                            all = "Superstar : " + group2[i - 1];
                             System.out.println("Superstar : ");
                             split(group2[i]);
                         }
                         else if (group2[i].contains("with")) {
-//                            all = "Superstar : " + group2[i - 1];
                             System.out.println("Accompanied with : ");
                             split(group2[i]);
                         }
                         else {
-//                            all = "Superstar : " + group2[i - 1];
                             System.out.println("Superstar : ");
                             split(group2[i]);
                         }
@@ -155,5 +151,140 @@ public class WikiPPV extends WebUi{
         return players;
     }
 
+    public void wwePlayers() throws IOException,ClassNotFoundException, SQLException{
+
+        String name;
+        String link;
+        int i = 0;
+
+        driver.get("https://en.wikipedia.org/wiki/List_of_WWE_personnel");
+
+
+
+
+            Class.forName("org.postgresql.Driver");
+            String url = "jdbc:postgresql://localhost/wwe?user=jaya";
+            Connection conn = DriverManager.getConnection(url);
+            Statement st = conn.createStatement();
+
+            PreparedStatement addSuperstar = conn.prepareStatement
+                    ("INSERT INTO superstar(id, name, link, alumni) values(?,?,?, False)");
+
+            List<WebElement> rows = driver.findElements(By.xpath("//table[@class='wikitable sortable jquery-tablesorter']/tbody/tr"));
+
+           System.out.println("count is : " + rows.size());
+
+            for (WebElement row : rows){
+                System.out.println("Star : " + row.findElement(By.xpath("td[1]")).getText());
+
+                if(row.findElements(By.xpath("td[1]/span[@class='vcard']")).size() > 0) {
+                    name = row.findElement(By.xpath("td[1]/span[@class='vcard']")).getText();
+                    link = row.findElement(By.xpath("td[1]/span[@class='vcard']/span/a")).getAttribute("href");
+                    System.out.println("Name : " + name  + " link : " + link );
+                    addSuperstar.setInt(1,++i);
+                    addSuperstar.setString(2,name);
+                    addSuperstar.setString(3,link);
+                    addSuperstar.executeUpdate();
+                    System.out.println(addSuperstar);
+                }
+            }
+
+            conn.close();
+    }
+
+
+
+    public void wweAlum() throws IOException,ClassNotFoundException, SQLException{
+
+        String name;
+        String link;
+        int i = 0;
+
+        List<String> alumins = Arrays.asList("https://en.wikipedia.org/wiki/List_of_WWE_alumni_(A%E2%80%93C)",
+                "https://en.wikipedia.org/wiki/List_of_WWE_alumni_(D%E2%80%93H)",
+                "https://en.wikipedia.org/wiki/List_of_WWE_alumni_(I%E2%80%93M)",
+                "https://en.wikipedia.org/wiki/List_of_WWE_alumni_(N%E2%80%93R)",
+                "https://en.wikipedia.org/wiki/List_of_WWE_alumni_(S%E2%80%93Z)");
+
+        Class.forName("org.postgresql.Driver");
+        String url = "jdbc:postgresql://localhost/wwe?user=jaya";
+        Connection conn = DriverManager.getConnection(url);
+        Statement st = conn.createStatement();
+
+        ResultSet rs=st.executeQuery("select max(id) from superstar");
+        while(rs.next()){
+            i = rs.getInt("max");
+            System.out.println("Max id : " + i);
+        }
+
+        PreparedStatement addSuperstar = conn.prepareStatement
+                ("INSERT INTO superstar(id, name, link, alumni) values(?,?,?, True)");
+
+        for (String alumn : alumins) {
+
+            driver.get(alumn);
+            List<WebElement> rows = driver.findElements(By.xpath("//table[@class='sortable wikitable jquery-tablesorter']/tbody/tr"));
+            System.out.println("For link : --" + alumn + "-- count is : " + rows.size());
+
+            for (WebElement row : rows) {
+                System.out.println("Star : " + row.findElement(By.xpath("td[1]")).getText());
+
+                if (row.findElements(By.xpath("td[1]/span[@class='sorttext']/a")).size() > 0) {
+                    name = row.findElement(By.xpath("td[1]/span[@class='sorttext']/a")).getText();
+                    link = row.findElement(By.xpath("td[1]/span[@class='sorttext']/a")).getAttribute("href");
+                    System.out.println("Name : " + name + " link : " + link );
+                    addSuperstar.setInt(1,++i);
+                    addSuperstar.setString(2,name);
+                    addSuperstar.setString(3,link);
+                    addSuperstar.executeUpdate();
+                    System.out.println(addSuperstar);
+                }
+            }
+        }
+
+        conn.close();
+    }
+
+    public void playerName() throws IOException,ClassNotFoundException, SQLException {
+//        driver.get("https://en.wikipedia.org/wiki/Booker_T_(wrestler)");
+
+        int i = 0;
+        String something = new String();
+
+        Class.forName("org.postgresql.Driver");
+        String url = "jdbc:postgresql://localhost/wwe?user=jaya";
+        Connection conn = DriverManager.getConnection(url);
+
+        Statement st = conn.createStatement();
+        ResultSet rs = st.executeQuery("select * from superstar");
+
+        PreparedStatement addRingName = conn.prepareStatement
+                ("INSERT INTO ringname(id, name, superstar_id) values(?,?,?)");
+
+        while (rs.next()) {
+
+            driver.get(rs.getString("link"));
+            if(driver.findElements(By.xpath("//table[contains(@class,'infobox')]//a[@title='Ring name']")).size() > 0){
+                something = driver.findElement(By.xpath("//a[@title='Ring name']/parent::span/parent::th/parent::tr/td")).getText();
+                System.out.println("Ring names : " + something);
+
+                addRingName.setInt(3, rs.getInt("id"));
+                String[] names = something.split("\n");
+
+                for(String name: names){
+                    name = name.contains("[")? name.substring(0, name.indexOf('[')) : name;
+                    System.out.println("names " + name);
+                    addRingName.setInt(1, ++i);
+                    addRingName.setString(2,name);
+                    addRingName.executeUpdate();
+                    System.out.println(addRingName);
+                }
+
+            }
+
+        }
+
+        conn.close();
+    }
 
 }

@@ -41,41 +41,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="WebUi.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/testGoogle/framework/WebUi.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WWEPPVHomeTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="WWEPPVHomeTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/testGoogle/test/WWEPPVHomeTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.20547946">
-              <caret line="100" column="84" selection-start-line="100" selection-start-column="27" selection-end-line="100" selection-end-column="84" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="88" column="31" selection-start-line="88" selection-start-column="31" selection-end-line="88" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1460617121000" expanded="true" signature="2233:2284" placeholder="INSERT INTO superstar... " />
+                <marker date="1461649485000" expanded="true" signature="1707:1758" placeholder="INSERT INTO superstar... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WikiPPV.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="WikiPPV.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/testGoogle/pages/WikiPPV.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="78" column="17" selection-start-line="78" selection-start-column="17" selection-end-line="78" selection-end-column="17" />
+            <state vertical-scroll-proportion="0.31490386">
+              <caret line="277" column="50" selection-start-line="277" selection-start-column="50" selection-end-line="277" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1460714314000" expanded="true" signature="792:860" placeholder="INSERT INTO PPV... " />
-                <marker date="1460714314000" expanded="true" signature="942:1003" placeholder="INSERT INTO Venue... " />
-                <marker date="1460714314000" expanded="true" signature="1068:1100" placeholder="select id fr... venue" />
-                <marker date="1460714314000" expanded="true" signature="3790:3807" placeholder="select name " />
-                <marker date="1460714314000" expanded="true" signature="3790:3816" placeholder="select name superstar" />
+                <marker date="1461670829000" expanded="true" signature="903:971" placeholder="INSERT INTO PPV... " />
+                <marker date="1461670829000" expanded="true" signature="1053:1114" placeholder="INSERT INTO Venue... " />
+                <marker date="1461670829000" expanded="true" signature="1179:1211" placeholder="select id fr... venue" />
+                <marker date="1461670829000" expanded="true" signature="3901:3918" placeholder="select name " />
+                <marker date="1461670829000" expanded="true" signature="3901:3927" placeholder="select name superstar" />
+                <marker date="1461670829000" expanded="true" signature="6441:6507" placeholder="INSERT INTO superstar... " />
+                <marker date="1461670829000" expanded="true" signature="8392:8406" placeholder="select max(i... " />
+                <marker date="1461670829000" expanded="true" signature="8392:8421" placeholder="select max(i... superstar" />
+                <marker date="1461670829000" expanded="true" signature="8626:8691" placeholder="INSERT INTO superstar... " />
+                <marker date="1461670829000" expanded="true" signature="10328:10351" placeholder="select name superstar" />
+                <marker date="1461670829000" expanded="true" signature="10436:10494" placeholder="INSERT INTO superstar... " />
               </folding>
             </state>
           </provider>
@@ -342,7 +338,7 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="754" />
+    <option name="height" value="797" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -369,6 +365,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -553,9 +552,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -571,139 +567,7 @@
     <property name="project.structure.side.proportion" value="0.34367815" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../NSM/sphinx_automation_api" />
   </component>
-  <component name="RunManager" selected="TestNG.WWEPPVHomeTest.doPlayers (1)">
-    <configuration default="false" name="WWEPPVHomeTest.doGoogleSearch (1)" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="testGoogle.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="WebdriverTutorial" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="testGoogle.test" />
-      <option name="MAIN_CLASS_NAME" value="testGoogle.test.WWEPPVHomeTest" />
-      <option name="METHOD_NAME" value="doGoogleSearch" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" value="0" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-      <method />
-    </configuration>
-    <configuration default="false" name="WWEPPVHomeTest.doPlayers" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="testGoogle.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="WebdriverTutorial" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="testGoogle.test" />
-      <option name="MAIN_CLASS_NAME" value="testGoogle.test.WWEPPVHomeTest" />
-      <option name="METHOD_NAME" value="doPlayers" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-      <method />
-    </configuration>
-    <configuration default="false" name="WWEPPVHomeTest.doPlayers (1)" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="testGoogle.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="WebdriverTutorial" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="testGoogle.test" />
-      <option name="MAIN_CLASS_NAME" value="testGoogle.test.WWEPPVHomeTest" />
-      <option name="METHOD_NAME" value="doPlayers" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" value="0" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-      <method />
-    </configuration>
-    <configuration default="false" name="WWEPPVHomeTest.something" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="testGoogle.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="WebdriverTutorial" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="testGoogle.test" />
-      <option name="MAIN_CLASS_NAME" value="testGoogle.test.WWEPPVHomeTest" />
-      <option name="METHOD_NAME" value="something" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="TestNG.WWEPPVHomeTest.ringnames (1)">
     <configuration default="false" name="WWEPPVHomeTest.something (1)" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -718,6 +582,138 @@
       <option name="PACKAGE_NAME" value="testGoogle.test" />
       <option name="MAIN_CLASS_NAME" value="testGoogle.test.WWEPPVHomeTest" />
       <option name="METHOD_NAME" value="something" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" value="0" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="false" name="WWEPPVHomeTest.nothing" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="testGoogle.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="WebdriverTutorial" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="testGoogle.test" />
+      <option name="MAIN_CLASS_NAME" value="testGoogle.test.WWEPPVHomeTest" />
+      <option name="METHOD_NAME" value="nothing" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="false" name="WWEPPVHomeTest.nothing (1)" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="testGoogle.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="WebdriverTutorial" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="testGoogle.test" />
+      <option name="MAIN_CLASS_NAME" value="testGoogle.test.WWEPPVHomeTest" />
+      <option name="METHOD_NAME" value="nothing" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" value="0" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="false" name="WWEPPVHomeTest.ringnames" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="testGoogle.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="WebdriverTutorial" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="testGoogle.test" />
+      <option name="MAIN_CLASS_NAME" value="testGoogle.test.WWEPPVHomeTest" />
+      <option name="METHOD_NAME" value="ringnames" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="false" name="WWEPPVHomeTest.ringnames (1)" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="testGoogle.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="WebdriverTutorial" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="testGoogle.test" />
+      <option name="MAIN_CLASS_NAME" value="testGoogle.test.WWEPPVHomeTest" />
+      <option name="METHOD_NAME" value="ringnames" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -1225,19 +1221,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="TestNG.WWEPPVHomeTest.doGoogleSearch (1)" />
-      <item index="1" class="java.lang.String" itemvalue="TestNG.WWEPPVHomeTest.doPlayers" />
-      <item index="2" class="java.lang.String" itemvalue="TestNG.WWEPPVHomeTest.doPlayers (1)" />
-      <item index="3" class="java.lang.String" itemvalue="TestNG.WWEPPVHomeTest.something" />
-      <item index="4" class="java.lang.String" itemvalue="TestNG.WWEPPVHomeTest.something (1)" />
+      <item index="0" class="java.lang.String" itemvalue="TestNG.WWEPPVHomeTest.something (1)" />
+      <item index="1" class="java.lang.String" itemvalue="TestNG.WWEPPVHomeTest.nothing" />
+      <item index="2" class="java.lang.String" itemvalue="TestNG.WWEPPVHomeTest.nothing (1)" />
+      <item index="3" class="java.lang.String" itemvalue="TestNG.WWEPPVHomeTest.ringnames" />
+      <item index="4" class="java.lang.String" itemvalue="TestNG.WWEPPVHomeTest.ringnames (1)" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="TestNG.WWEPPVHomeTest.doPlayers (1)" />
-        <item index="1" class="java.lang.String" itemvalue="TestNG.WWEPPVHomeTest.doPlayers" />
-        <item index="2" class="java.lang.String" itemvalue="TestNG.WWEPPVHomeTest.something (1)" />
-        <item index="3" class="java.lang.String" itemvalue="TestNG.WWEPPVHomeTest.something" />
-        <item index="4" class="java.lang.String" itemvalue="TestNG.WWEPPVHomeTest.doGoogleSearch (1)" />
+        <item index="0" class="java.lang.String" itemvalue="TestNG.WWEPPVHomeTest.ringnames (1)" />
+        <item index="1" class="java.lang.String" itemvalue="TestNG.WWEPPVHomeTest.ringnames" />
+        <item index="2" class="java.lang.String" itemvalue="TestNG.WWEPPVHomeTest.nothing (1)" />
+        <item index="3" class="java.lang.String" itemvalue="TestNG.WWEPPVHomeTest.nothing" />
+        <item index="4" class="java.lang.String" itemvalue="TestNG.WWEPPVHomeTest.something (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -1256,55 +1252,58 @@
       <workItem from="1457934096248" duration="2533000" />
       <workItem from="1457947593852" duration="32839000" />
       <workItem from="1458725174346" duration="22870000" />
-      <workItem from="1460958830328" duration="37000" />
+      <workItem from="1460958830328" duration="9249000" />
+      <workItem from="1461564173399" duration="12247000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="WWEPPVHomeTest_doPlayers_(1) - 2016.04.14 at 15h 17m 11s.xml">
-      <configuration name="WWEPPVHomeTest.doPlayers (1)" configurationId="TestNG" />
+    <history-entry file="WWEPPVHomeTest_ringnames_(1) - 2016.04.26 at 11h 19m 46s.xml">
+      <configuration name="WWEPPVHomeTest.ringnames (1)" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="WWEPPVHomeTest_doPlayers_(1) - 2016.04.14 at 15h 42m 55s.xml">
-      <configuration name="WWEPPVHomeTest.doPlayers (1)" configurationId="TestNG" />
+    <history-entry file="WWEPPVHomeTest_ringnames_(1) - 2016.04.26 at 11h 24m 45s.xml">
+      <configuration name="WWEPPVHomeTest.ringnames (1)" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="WWEPPVHomeTest_doPlayers_(1) - 2016.04.14 at 15h 43m 25s.xml">
-      <configuration name="WWEPPVHomeTest.doPlayers (1)" configurationId="TestNG" />
+    <history-entry file="WWEPPVHomeTest_ringnames_(1) - 2016.04.26 at 11h 33m 38s.xml">
+      <configuration name="WWEPPVHomeTest.ringnames (1)" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="WWEPPVHomeTest_doPlayers_(1) - 2016.04.14 at 16h 03m 10s.xml">
-      <configuration name="WWEPPVHomeTest.doPlayers (1)" configurationId="TestNG" />
+    <history-entry file="WWEPPVHomeTest_ringnames_(1) - 2016.04.26 at 11h 35m 16s.xml">
+      <configuration name="WWEPPVHomeTest.ringnames (1)" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="WWEPPVHomeTest_doPlayers_(1) - 2016.04.14 at 16h 03m 37s.xml">
-      <configuration name="WWEPPVHomeTest.doPlayers (1)" configurationId="TestNG" />
+    <history-entry file="WWEPPVHomeTest_ringnames_(1) - 2016.04.26 at 11h 53m 59s.xml">
+      <configuration name="WWEPPVHomeTest.ringnames (1)" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="WWEPPVHomeTest_doPlayers_(1) - 2016.04.15 at 11h 48m 52s.xml">
-      <configuration name="WWEPPVHomeTest.doPlayers (1)" configurationId="TestNG" />
+    <history-entry file="WWEPPVHomeTest_ringnames_(1) - 2016.04.26 at 11h 55m 38s.xml">
+      <configuration name="WWEPPVHomeTest.ringnames (1)" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="WWEPPVHomeTest_doPlayers_(1) - 2016.04.15 at 11h 49m 20s.xml">
-      <configuration name="WWEPPVHomeTest.doPlayers (1)" configurationId="TestNG" />
+    <history-entry file="WWEPPVHomeTest_ringnames_(1) - 2016.04.26 at 12h 34m 26s.xml">
+      <configuration name="WWEPPVHomeTest.ringnames (1)" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="WWEPPVHomeTest_doPlayers_(1) - 2016.04.15 at 15h 00m 56s.xml">
-      <configuration name="WWEPPVHomeTest.doPlayers (1)" configurationId="TestNG" />
+    <history-entry file="WWEPPVHomeTest_ringnames_(1) - 2016.04.26 at 14h 24m 19s.xml">
+      <configuration name="WWEPPVHomeTest.ringnames (1)" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="WWEPPVHomeTest_doPlayers_(1) - 2016.04.15 at 15h 17m 36s.xml">
-      <configuration name="WWEPPVHomeTest.doPlayers (1)" configurationId="TestNG" />
+    <history-entry file="WWEPPVHomeTest_ringnames_(1) - 2016.04.26 at 16h 42m 57s.xml">
+      <configuration name="WWEPPVHomeTest.ringnames (1)" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="WWEPPVHomeTest_doPlayers_(1) - 2016.04.15 at 15h 29m 01s.xml">
-      <configuration name="WWEPPVHomeTest.doPlayers (1)" configurationId="TestNG" />
+    <history-entry file="WWEPPVHomeTest_ringnames_(1) - 2016.04.26 at 17h 26m 28s.xml">
+      <configuration name="WWEPPVHomeTest.ringnames (1)" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59953000" />
+    <option name="totallyTimeSpent" value="81412000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="754" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="797" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32846716" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298969" sideWeight="0.50277776" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3901099" sideWeight="0.49722221" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1314,15 +1313,13 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42773724" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32846716" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34160584" sideWeight="0.49722221" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42773724" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1350,6 +1347,17 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/test/java/testGoogle/test/WWEPPVHomeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1461649485000" expanded="true" signature="1707:1758" placeholder="INSERT INTO superstar... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/testGoogle/framework/WebUi.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1364,7 +1372,7 @@
           <caret line="100" column="84" selection-start-line="100" selection-start-column="27" selection-end-line="100" selection-end-column="84" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1460617121000" expanded="true" signature="2233:2284" placeholder="INSERT INTO superstar... " />
+            <marker date="1461649485000" expanded="true" signature="1707:1758" placeholder="INSERT INTO superstar... " />
           </folding>
         </state>
       </provider>
@@ -1383,7 +1391,7 @@
           <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1460617121000" expanded="true" signature="2233:2284" placeholder="INSERT INTO superstar... " />
+            <marker date="1461649485000" expanded="true" signature="1707:1758" placeholder="INSERT INTO superstar... " />
           </folding>
         </state>
       </provider>
@@ -1394,11 +1402,17 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1460714314000" expanded="true" signature="792:860" placeholder="INSERT INTO PPV... " />
-            <marker date="1460714314000" expanded="true" signature="942:1003" placeholder="INSERT INTO Venue... " />
-            <marker date="1460714314000" expanded="true" signature="1068:1100" placeholder="select id fr... venue" />
-            <marker date="1460714314000" expanded="true" signature="3790:3807" placeholder="select name " />
-            <marker date="1460714314000" expanded="true" signature="3790:3816" placeholder="select name superstar" />
+            <marker date="1461670829000" expanded="true" signature="903:971" placeholder="INSERT INTO PPV... " />
+            <marker date="1461670829000" expanded="true" signature="1053:1114" placeholder="INSERT INTO Venue... " />
+            <marker date="1461670829000" expanded="true" signature="1179:1211" placeholder="select id fr... venue" />
+            <marker date="1461670829000" expanded="true" signature="3901:3918" placeholder="select name " />
+            <marker date="1461670829000" expanded="true" signature="3901:3927" placeholder="select name superstar" />
+            <marker date="1461670829000" expanded="true" signature="6441:6507" placeholder="INSERT INTO superstar... " />
+            <marker date="1461670829000" expanded="true" signature="8392:8406" placeholder="select max(i... " />
+            <marker date="1461670829000" expanded="true" signature="8392:8421" placeholder="select max(i... superstar" />
+            <marker date="1461670829000" expanded="true" signature="8626:8691" placeholder="INSERT INTO superstar... " />
+            <marker date="1461670829000" expanded="true" signature="10328:10351" placeholder="select name superstar" />
+            <marker date="1461670829000" expanded="true" signature="10436:10494" placeholder="INSERT INTO superstar... " />
           </folding>
         </state>
       </provider>
@@ -1415,10 +1429,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding>
-            <element signature="e#1232#1233#0" expanded="false" />
-            <element signature="e#1266#1267#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1428,7 +1439,7 @@
           <caret line="11" column="51" selection-start-line="11" selection-start-column="51" selection-end-line="11" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1460617121000" expanded="true" signature="2233:2284" placeholder="INSERT INTO superstar... " />
+            <marker date="1461649485000" expanded="true" signature="1707:1758" placeholder="INSERT INTO superstar... " />
           </folding>
         </state>
       </provider>
@@ -1439,11 +1450,17 @@
           <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1460714314000" expanded="true" signature="792:860" placeholder="INSERT INTO PPV... " />
-            <marker date="1460714314000" expanded="true" signature="942:1003" placeholder="INSERT INTO Venue... " />
-            <marker date="1460714314000" expanded="true" signature="1068:1100" placeholder="select id fr... venue" />
-            <marker date="1460714314000" expanded="true" signature="3790:3807" placeholder="select name " />
-            <marker date="1460714314000" expanded="true" signature="3790:3816" placeholder="select name superstar" />
+            <marker date="1461670829000" expanded="true" signature="903:971" placeholder="INSERT INTO PPV... " />
+            <marker date="1461670829000" expanded="true" signature="1053:1114" placeholder="INSERT INTO Venue... " />
+            <marker date="1461670829000" expanded="true" signature="1179:1211" placeholder="select id fr... venue" />
+            <marker date="1461670829000" expanded="true" signature="3901:3918" placeholder="select name " />
+            <marker date="1461670829000" expanded="true" signature="3901:3927" placeholder="select name superstar" />
+            <marker date="1461670829000" expanded="true" signature="6441:6507" placeholder="INSERT INTO superstar... " />
+            <marker date="1461670829000" expanded="true" signature="8392:8406" placeholder="select max(i... " />
+            <marker date="1461670829000" expanded="true" signature="8392:8421" placeholder="select max(i... superstar" />
+            <marker date="1461670829000" expanded="true" signature="8626:8691" placeholder="INSERT INTO superstar... " />
+            <marker date="1461670829000" expanded="true" signature="10328:10351" placeholder="select name superstar" />
+            <marker date="1461670829000" expanded="true" signature="10436:10494" placeholder="INSERT INTO superstar... " />
           </folding>
         </state>
       </provider>
@@ -1452,10 +1469,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding>
-            <element signature="e#1232#1233#0" expanded="false" />
-            <element signature="e#1266#1267#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1465,7 +1479,7 @@
           <caret line="11" column="51" selection-start-line="11" selection-start-column="51" selection-end-line="11" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1460617121000" expanded="true" signature="2233:2284" placeholder="INSERT INTO superstar... " />
+            <marker date="1461649485000" expanded="true" signature="1707:1758" placeholder="INSERT INTO superstar... " />
           </folding>
         </state>
       </provider>
@@ -1474,7 +1488,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1491,11 +1507,17 @@
           <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1460714314000" expanded="true" signature="792:860" placeholder="INSERT INTO PPV... " />
-            <marker date="1460714314000" expanded="true" signature="942:1003" placeholder="INSERT INTO Venue... " />
-            <marker date="1460714314000" expanded="true" signature="1068:1100" placeholder="select id fr... venue" />
-            <marker date="1460714314000" expanded="true" signature="3790:3807" placeholder="select name " />
-            <marker date="1460714314000" expanded="true" signature="3790:3816" placeholder="select name superstar" />
+            <marker date="1461670829000" expanded="true" signature="903:971" placeholder="INSERT INTO PPV... " />
+            <marker date="1461670829000" expanded="true" signature="1053:1114" placeholder="INSERT INTO Venue... " />
+            <marker date="1461670829000" expanded="true" signature="1179:1211" placeholder="select id fr... venue" />
+            <marker date="1461670829000" expanded="true" signature="3901:3918" placeholder="select name " />
+            <marker date="1461670829000" expanded="true" signature="3901:3927" placeholder="select name superstar" />
+            <marker date="1461670829000" expanded="true" signature="6441:6507" placeholder="INSERT INTO superstar... " />
+            <marker date="1461670829000" expanded="true" signature="8392:8406" placeholder="select max(i... " />
+            <marker date="1461670829000" expanded="true" signature="8392:8421" placeholder="select max(i... superstar" />
+            <marker date="1461670829000" expanded="true" signature="8626:8691" placeholder="INSERT INTO superstar... " />
+            <marker date="1461670829000" expanded="true" signature="10328:10351" placeholder="select name superstar" />
+            <marker date="1461670829000" expanded="true" signature="10436:10494" placeholder="INSERT INTO superstar... " />
           </folding>
         </state>
       </provider>
@@ -1512,10 +1534,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding>
-            <element signature="e#1232#1233#0" expanded="false" />
-            <element signature="e#1266#1267#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1525,7 +1544,7 @@
           <caret line="11" column="51" selection-start-line="11" selection-start-column="51" selection-end-line="11" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1460617121000" expanded="true" signature="2233:2284" placeholder="INSERT INTO superstar... " />
+            <marker date="1461649485000" expanded="true" signature="1707:1758" placeholder="INSERT INTO superstar... " />
           </folding>
         </state>
       </provider>
@@ -1559,14 +1578,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testGoogle/framework/Driver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16447368">
-          <caret line="5" column="53" selection-start-line="5" selection-start-column="53" selection-end-line="5" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/testGoogle/framework/Logger.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.23026316">
@@ -1586,14 +1597,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5263158">
           <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testGoogle/framework/WebUi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1627,28 +1630,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testGoogle/pages/WikiPPV.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/testGoogle/framework/Driver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="78" column="17" selection-start-line="78" selection-start-column="17" selection-end-line="78" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.27027026">
+          <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1460714314000" expanded="true" signature="792:860" placeholder="INSERT INTO PPV... " />
-            <marker date="1460714314000" expanded="true" signature="942:1003" placeholder="INSERT INTO Venue... " />
-            <marker date="1460714314000" expanded="true" signature="1068:1100" placeholder="select id fr... venue" />
-            <marker date="1460714314000" expanded="true" signature="3790:3807" placeholder="select name " />
-            <marker date="1460714314000" expanded="true" signature="3790:3816" placeholder="select name superstar" />
+            <element signature="imports" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/testGoogle/framework/WebUi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.027027028">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/testGoogle/test/WWEPPVHomeTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.20547946">
-          <caret line="100" column="84" selection-start-line="100" selection-start-column="27" selection-end-line="100" selection-end-column="84" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="88" column="31" selection-start-line="88" selection-start-column="31" selection-end-line="88" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1460617121000" expanded="true" signature="2233:2284" placeholder="INSERT INTO superstar... " />
+            <marker date="1461649485000" expanded="true" signature="1707:1758" placeholder="INSERT INTO superstar... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/testGoogle/pages/WikiPPV.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.31490386">
+          <caret line="277" column="50" selection-start-line="277" selection-start-column="50" selection-end-line="277" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1461670829000" expanded="true" signature="903:971" placeholder="INSERT INTO PPV... " />
+            <marker date="1461670829000" expanded="true" signature="1053:1114" placeholder="INSERT INTO Venue... " />
+            <marker date="1461670829000" expanded="true" signature="1179:1211" placeholder="select id fr... venue" />
+            <marker date="1461670829000" expanded="true" signature="3901:3918" placeholder="select name " />
+            <marker date="1461670829000" expanded="true" signature="3901:3927" placeholder="select name superstar" />
+            <marker date="1461670829000" expanded="true" signature="6441:6507" placeholder="INSERT INTO superstar... " />
+            <marker date="1461670829000" expanded="true" signature="8392:8406" placeholder="select max(i... " />
+            <marker date="1461670829000" expanded="true" signature="8392:8421" placeholder="select max(i... superstar" />
+            <marker date="1461670829000" expanded="true" signature="8626:8691" placeholder="INSERT INTO superstar... " />
+            <marker date="1461670829000" expanded="true" signature="10328:10351" placeholder="select name superstar" />
+            <marker date="1461670829000" expanded="true" signature="10436:10494" placeholder="INSERT INTO superstar... " />
           </folding>
         </state>
       </provider>
