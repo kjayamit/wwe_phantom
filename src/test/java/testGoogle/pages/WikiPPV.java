@@ -12,9 +12,7 @@ import testGoogle.framework.WebUi;
 import java.io.IOException;
 import java.sql.*;
 import java.sql.ResultSet;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 public class WikiPPV extends WebUi{
 
@@ -27,7 +25,7 @@ public class WikiPPV extends WebUi{
         int n = 0;
         int o = 0;
         PreparedStatement addPPV = conn.prepareStatement
-                ("INSERT INTO PPV(id, date, name, venue, main_event) values(?,?,?,?,?)");
+                ("INSERT INTO PPV(id, date, name, venue, main_event, url) values(?,?,?,?,?,?)");
 
         PreparedStatement addVenue = conn.prepareStatement
                 ("INSERT INTO Venue(id, location, latlong, url) values(?,?,?,?)");
@@ -65,8 +63,8 @@ public class WikiPPV extends WebUi{
                     addPPV.setInt(1,++n);
                     addPPV.setString(2,row.findElement(By.xpath("td")).getText());
                     addPPV.setString(3,row.findElement(By.xpath("td[2]")).getText());
-
                     addPPV.setString(5,row.findElement(By.xpath("td[5]")).getText());
+                    addPPV.setString(6,row.findElement(By.xpath("td[2]/a")).getAttribute("href"));
                     addPPV.executeUpdate();
                     System.out.println(addPPV);
                 }
@@ -88,9 +86,7 @@ public class WikiPPV extends WebUi{
     }
 
     public void splitPlayers() throws IOException,ClassNotFoundException, SQLException   {
-        driver.get("https://en.wikipedia.org/wiki/WrestleMania_32");
-
-//        driver.get("https://en.wikipedia.org/wiki/List_of_WWE_pay-per-view_events");
+        driver.get("https://en.wikipedia.org/wiki/TLC:_Tables,_Ladders,_and_Chairs_(2015)");
 
         Class.forName("org.postgresql.Driver");
         String url = "jdbc:postgresql://localhost/wwe?user=jaya";
@@ -246,7 +242,7 @@ public class WikiPPV extends WebUi{
     }
 
     public void playerName() throws IOException,ClassNotFoundException, SQLException {
-//        driver.get("https://en.wikipedia.org/wiki/Booker_T_(wrestler)");
+
 
         int i = 0;
         String something = new String();
@@ -285,6 +281,74 @@ public class WikiPPV extends WebUi{
         }
 
         conn.close();
+    }
+
+    public void replaceIDs() throws IOException,ClassNotFoundException, SQLException {
+        driver.get("https://en.wikipedia.org/wiki/TLC:_Tables,_Ladders,_and_Chairs_(2015)");
+
+        Class.forName("org.postgresql.Driver");
+        String url = "jdbc:postgresql://localhost/wwe?user=jaya";
+        Connection conn = DriverManager.getConnection(url);
+
+        Statement st = conn.createStatement();
+        ResultSet rs = st.executeQuery("select * from ringname");
+        Map<Integer,String> hM = new HashMap<Integer,String>();
+
+        PreparedStatement getRingNameID = conn.prepareStatement("select id from ringname where name=?");
+
+        List<WebElement> rows = driver.findElements(By.xpath("//table[@class='wikitable']/tbody/tr"));
+        String s = new String();
+        String all = new String();
+        int noOfPlayers;
+        List<String> matches = new ArrayList<String>();
+        for( WebElement row:rows) {
+            if(row.findElements(By.xpath("td")).size() > 0) {
+                s = row.findElement(By.xpath("td")).getText();
+                System.out.println("match : "+ s);
+                matches.add(s);
+
+                String[] groups = s.split("defeated|vs\\.|\\(|\\)|,|with|and|by");
+                for(String group : groups){
+//                    System.out.println(" group : " + group);
+                    getRingNameID.setString(1,group.trim());
+                    ResultSet getID = getRingNameID.executeQuery();
+                    if(getID.next()){
+                        hM.put(getID.getInt(1),group.trim());
+                    }
+                }
+
+                for (Map.Entry<Integer, String> entry : hM.entrySet()) {
+                    int key = entry.getKey();
+                    String value = entry.getValue();
+                    if(!value.isEmpty()){
+
+                        s = s.replace(value,String.valueOf(key));
+                    }
+                }
+
+
+                System.out.println("match with ID : "+ s);
+            }
+        }
+
+
+
+//        while (rs.next()) {
+//            for(int i =0; i<matches.size(); i++){
+//                if(matches.get(i).contains(rs.getString("name"))){
+//                      matches.set(i,matches.get(i).replace(rs.getString("name"),String.valueOf(rs.getInt("id"))));
+//                    System.out.println("replaced : " + matches.get(i));
+//                }
+//            }
+//        }
+//
+//
+//        for(String match : matches){
+//
+//            System.out.println("match : " + match);
+//        }
+//
+//        conn.close();
     }
 
 }

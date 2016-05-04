@@ -89,6 +89,11 @@ public class WWEPPVHomeTest extends BaseTest{
         wikiPPV().playerName();
     }
 
+    @Test(groups = {"smoke"})
+    public void replaceRingName() throws IOException,ClassNotFoundException, SQLException {
+        wikiPPV().replaceIDs();
+    }
+
 
     public static String callURL(String myURL) {
         System.out.println("Requested URL:" + myURL);
