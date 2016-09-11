@@ -14,7 +14,13 @@ repositories {
 dependencies {
     testCompile 'org.testng:testng:6.1.1',
             'com.github.detro:phantomjsdriver:1.2.0',
-            'org.postgresql:postgresql:9.4-1200-jdbc41'
+            'com.jayway.restassured:rest-assured:2.9.0',
+            'com.jayway.restassured:json-path:2.9.0',
+            'com.jayway.restassured:json-schema-validator:2.9.0',
+            'com.ibm.watson.developer_cloud:java-sdk:3.3.0',
+            'org.postgresql:postgresql:9.4-1200-jdbc41',
+            'com.jayway.jsonpath:json-path:2.2.0',
+            'com.googlecode.json-simple:json-simple:1.1.1'
 
 }
 

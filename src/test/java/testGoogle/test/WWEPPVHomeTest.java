@@ -5,6 +5,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.json.JSONTokener;
+import org.json.simple.parser.ParseException;
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 import testGoogle.framework.BaseTest;
@@ -90,8 +91,9 @@ public class WWEPPVHomeTest extends BaseTest{
     }
 
     @Test(groups = {"smoke"})
-    public void replaceRingName() throws IOException,ClassNotFoundException, SQLException {
-        wikiPPV().replaceIDs();
+    public void replaceRingName() throws IOException, ClassNotFoundException, SQLException, ParseException {
+//        wikiPPV().replaceIDs();
+        wikiPPV().replaceIDAlchemy();
     }
 
 

@@ -1,3 +1,5 @@
 build/**
 classes/**
 .gradle/**
+.idea
+.DS_Store

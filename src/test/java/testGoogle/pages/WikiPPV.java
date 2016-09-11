@@ -1,8 +1,16 @@
 package testGoogle.pages;
 
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
+import com.ibm.watson.developer_cloud.alchemy.v1.AlchemyLanguage;
+import com.ibm.watson.developer_cloud.alchemy.v1.model.*;
+import com.jayway.jsonpath.Configuration;
+import com.jayway.jsonpath.JsonPath;
+import com.jayway.restassured.RestAssured;
+import com.jayway.restassured.authentication.FormAuthConfig;
+import com.jayway.restassured.response.Response;
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.html5.*;
@@ -13,6 +21,9 @@ import java.io.IOException;
 import java.sql.*;
 import java.sql.ResultSet;
 import java.util.*;
+import java.util.regex.Pattern;
+
+import static com.jayway.restassured.RestAssured.given;
 
 public class WikiPPV extends WebUi{
 
@@ -284,6 +295,7 @@ public class WikiPPV extends WebUi{
     }
 
     public void replaceIDs() throws IOException,ClassNotFoundException, SQLException {
+
         driver.get("https://en.wikipedia.org/wiki/TLC:_Tables,_Ladders,_and_Chairs_(2015)");
 
         Class.forName("org.postgresql.Driver");
@@ -296,59 +308,92 @@ public class WikiPPV extends WebUi{
 
         PreparedStatement getRingNameID = conn.prepareStatement("select id from ringname where name=?");
 
-        List<WebElement> rows = driver.findElements(By.xpath("//table[@class='wikitable']/tbody/tr"));
-        String s = new String();
-        String all = new String();
-        int noOfPlayers;
-        List<String> matches = new ArrayList<String>();
-        for( WebElement row:rows) {
-            if(row.findElements(By.xpath("td")).size() > 0) {
-                s = row.findElement(By.xpath("td")).getText();
-                System.out.println("match : "+ s);
-                matches.add(s);
+        ResultSet rs2 = st.executeQuery("select url from ppv");
 
-                String[] groups = s.split("defeated|vs\\.|\\(|\\)|,|with|and|by");
-                for(String group : groups){
+            System.out.println("ppv : "+ driver.findElement(By.id("firstHeading")).getText());
+            List<WebElement> rows = driver.findElements(By.xpath("//table[@class='wikitable']/tbody/tr"));
+            String s = new String();
+            String all = new String();
+            int noOfPlayers;
+            List<String> matches = new ArrayList<String>();
+            for (WebElement row : rows) {
+                if (row.findElements(By.xpath("td")).size() > 0) {
+                    s = row.findElement(By.xpath("td")).getText();
+                    System.out.println("match : " + s);
+                    matches.add(s);
+
+                    String[] groups = s.split("\\s*defeated\\s*|\\svs\\.\\s|\\s*\\(c\\)\\s*|\\s*\\(\\s*|\\s*\\)\\s*|\\s*,\\s*|\\s*with\\s*|\\sand\\s|\\sby\\s|\\svia\\s|\\s*with\\s*");
+
+                    for (String group : groups) {
 //                    System.out.println(" group : " + group);
-                    getRingNameID.setString(1,group.trim());
-                    ResultSet getID = getRingNameID.executeQuery();
-                    if(getID.next()){
-                        hM.put(getID.getInt(1),group.trim());
+                        getRingNameID.setString(1, group.trim());
+                        ResultSet getID = getRingNameID.executeQuery();
+                        if (getID.next() ) {
+                            hM.put(getID.getInt(1), group.trim());
+                        } else {
+                            if(!group.trim().isEmpty()) System.out.println("Id not found : " + group);
+                        }
                     }
+
+                    for (Map.Entry<Integer, String> entry : hM.entrySet()) {
+                        int key = entry.getKey();
+                        String value = entry.getValue();
+                        if (!value.isEmpty()) {
+
+                            s = s.replace(value, String.valueOf(key));
+                        }
+                    }
+
+
+//                    System.out.println("match with ID : " + s);
                 }
 
-                for (Map.Entry<Integer, String> entry : hM.entrySet()) {
-                    int key = entry.getKey();
-                    String value = entry.getValue();
-                    if(!value.isEmpty()){
-
-                        s = s.replace(value,String.valueOf(key));
-                    }
-                }
-
-
-                System.out.println("match with ID : "+ s);
+                System.out.println("match with ID : " + s);
             }
+    }
+
+    public void replaceIDAlchemy() throws ParseException {
+
+        String match = "The Usos (Jimmy Uso and Jey Uso) (c) defeated The Real Americans (Cesaro and Jack Swagger) (with Zeb Colter), RybAxel (Ryback and Curtis Axel), and Los Matadores (Diego and Fernando) (with El Torito)";
+
+
+
+        AlchemyLanguage service = new AlchemyLanguage();
+        service.setApiKey("8cc13ac542566f419e3f692d1df3301014186f63");
+
+        Map<String,Object> params = new HashMap<String, Object>();
+        params.put(AlchemyLanguage.TEXT, match);
+        DocumentSentiment sentiment = service.getSentiment(params).execute();
+
+
+        Entities entities = service.getEntities(params).execute();
+
+
+        JSONArray persons = (JSONArray) ((JSONObject) new JSONParser().parse(entities.toString())).get("entities");
+
+        for(Object person: persons ){
+            JSONObject star = (JSONObject) person;
+            String name = (String) star.get("text");
+
+            System.out.println("The star is : " + name);
+
         }
 
 
+        SAORelations relationObject = service.getRelations(params).execute();
 
-//        while (rs.next()) {
-//            for(int i =0; i<matches.size(); i++){
-//                if(matches.get(i).contains(rs.getString("name"))){
-//                      matches.set(i,matches.get(i).replace(rs.getString("name"),String.valueOf(rs.getInt("id"))));
-//                    System.out.println("replaced : " + matches.get(i));
-//                }
-//            }
-//        }
-//
-//
-//        for(String match : matches){
-//
-//            System.out.println("match : " + match);
-//        }
-//
-//        conn.close();
+
+        Object document = Configuration.defaultConfiguration().jsonProvider().parse(relationObject.toString());
+
+        String result = JsonPath.read(document, "$.relations[0].action.text");
+
+        String winner = JsonPath.read(document, "$.relations[0].subject.text");
+
+        String others = JsonPath.read(document, "$.relations[0].object.text");
+
+        System.out.println("winners : " + winner + " result : " + result + " opponent : " + others);
+
+
     }
 
 }
